@@ -60,12 +60,14 @@ src/
 
 ## Compatibilities
 
+```
   Blockchains:
       - Ethereum
   Tokens:
       - Native ETH
       - BeatToken is ERC20
       - Festival passes and memorabilia are built within the same ERC1155.
+```
 
 ## Roles
 
@@ -101,6 +103,7 @@ The audit uncovered several issues across multiple severity levels. Medium-sever
 ---
 
 **Description**
+
 The `MemorabiliaCollection` structure includes an `isActive` flag that determines whether users are allowed to redeem NFTs from a given collection. This flag is set once during collection creation via the `createMemorabiliaCollection` function and is later checked in `redeemMemorabilia` to allow or block redemptions.
 
 However, the protocol does not provide any function to update or toggle the `isActive` flag after a collection has been created. As a result, the activation state of a collection becomes immutable after initialization.
@@ -169,6 +172,7 @@ This test confirms that once a collection is created with `isActive = false`, it
 ---
 
 **Recommended Mitigation**
+
 Introduce an explicit function that allows the organizer to update the `isActive` flag of an existing collection. This function should be restricted with the `onlyOrganizer` modifier and enable toggling the collection state between active and inactive, restoring proper lifecycle control over memorabilia collections. For example:
 
 ```diff
@@ -505,3 +509,4 @@ function encodeTokenId(uint256 collectionId, uint256 itemId) public pure returns
 ```
 
 This change preserves the intended encoding scheme while ensuring that invalid inputs are rejected safely and transparently.
+
