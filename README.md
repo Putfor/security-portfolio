@@ -44,13 +44,14 @@ Below are detailed security assessments I've conducted on educational protocols.
 
 | Protocol | Date | Scope (nSLOC) | Findings | Report |
 |----------|------|---------------|----------|--------|
+| AirDropper | Feb 2026 | 62 | 2H, 2L | [📄 View Report](./2026-02-22-airDropper-audit-report.pdf) |
 | BeatLand Festival | Jan 2026 | 234 | 2M, 2L | [📄 View Report](./2026-01-22-beatLand-festival-audit-report.pdf) |
 | Santa's List | Jan 2026 | 116 | 3H, 2L | [📄 View Report](./2026-01-08-santasList-audit-report.pdf) |
 | TSwap | Nov 2025 | 276 | 4H, 1M, 2L, 9I | [📄 View Report](./2025-11-06-tswap-audit.pdf) |
 | Puppy Raffle | Oct 2025 | 143 | 4H, 2M, 8I | [📄 View Report](./2025-10-30-puppyRaffle-audit.pdf) |
 | Password Store | Oct 2025 | 20 | 2H, 1I | [📄 View Report](./2025-10-19-passworStore-audit.pdf) |
 
-**Total audited:** 789 nSLOC across multiple protocol types
+**Total audited:** 851 nSLOC across multiple protocol types
 
 ## 🎯 Audit Highlights
 
