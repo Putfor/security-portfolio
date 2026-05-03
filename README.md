@@ -31,6 +31,7 @@ My approach combines manual code review with systematic testing using Foundry, c
 - DeFi security
 - Access control & state management
 - Economic attack vectors
+- ECDSA
 
 ## 📊 Audit Reports
 
@@ -44,6 +45,7 @@ Below are detailed security assessments I've conducted on educational protocols.
 
 | Protocol | Date | Scope (nSLOC) | Findings | Report |
 |----------|------|---------------|----------|--------|
+| Monetrix | May 2026 | 1,726 | 1M, 2L | [📄 View Report](./2026-05-03-monetrix-audit-report.pdf) |
 | The Standard | April 2026 | 609 | 1H, 2M, 1L | [📄 View Report](./2026-04-01-theStandard-audit-report.pdf) |
 | DatingDapp | Mar 2026 | 197 | 3H, 3L | [📄 View Report](./2026-03-01-datingDapp-audit-report.pdf) |
 | AirDropper | Feb 2026 | 62 | 2H, 2L | [📄 View Report](./2026-02-22-airDropper-audit-report.pdf) |
@@ -53,7 +55,7 @@ Below are detailed security assessments I've conducted on educational protocols.
 | Puppy Raffle | Oct 2025 | 143 | 4H, 2M, 8I | [📄 View Report](./2025-10-30-puppyRaffle-audit.pdf) |
 | Password Store | Oct 2025 | 20 | 2H, 1I | [📄 View Report](./2025-10-19-passworStore-audit.pdf) |
 
-**Total audited:** 1,657 nSLOC across multiple protocol types
+**Total audited:** 3,383 nSLOC across multiple protocol types
 
 ## 🎯 Audit Highlights
 
